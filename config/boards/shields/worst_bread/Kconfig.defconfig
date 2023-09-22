@@ -1,0 +1,30 @@
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config ZMK_BLE
+ 	default y
+
+
+if SHIELD_VERTY_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Verty"
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+config ZMK_USB
+  	default y
+
+endif # SHIELD_VERTY_LEFT
+
+
+if SHIELD_VERTY_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif # SHIELD_VERTY_RIGHT

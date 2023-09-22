@@ -1,0 +1,12 @@
+file_format: "1"
+id: verty
+name: Verty
+type: shield
+url: https://github.com/Easontons/zmk-config-verty
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - verty_left
+  - verty_right
